@@ -1,0 +1,215 @@
+html, body {
+    margin: 0px;   
+    padding: 0px;
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+.bars {
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    font-size:30px;
+    cursor: pointer;
+    z-index: 2;
+    color: #B86B77;
+}
+.toolbar {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: 0px;
+    height: 100%;
+    background: #EEE;
+    transition: 0.5s;
+    box-shadow: 0px 0px 5px #EEE;
+    z-index: 2;
+}
+.toolbar_content {
+    display: none;
+}
+.closebars {
+    float: right;
+    margin-right: 8%;
+    margin-top: 4%;
+    font-size:30px;
+    cursor: pointer;
+    color: #B86B77;
+}
+.logo {
+    font-family: 'Smooch', cursive;
+    font-size: 80px;
+    color: #B86B77;
+    text-shadow: -1px 0px 1px #EABFB9, 1px 0px 1px #EABFB9,
+        0px -1px 1px #EABFB9, 0px 1px 1px #EABFB9;
+    text-align: left;
+}
+.indexvidbg {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0px 15px 23px -15px #000;
+    background-color: rgba(255,255,255,0.5);
+}
+.indexvidsub {
+    position: absolute;
+    margin-right: 15%;
+    margin-top: 7%;
+    color: #FFF;
+    text-shadow: 0px 0px 3px #000;
+}
+.letsgo {
+    width: auto;
+    padding: 10px;
+    font-size: 30px;
+    margin-right: -32%;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    background: #ffffff;
+    color: #ba707b;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+.box {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+    margin-top: -10%;
+    background-color: #EEE;
+    background-size: 100% 100%;
+    transition: 0.5s;
+}
+.box:Hover {
+    box-shadow: -1px 0px 5px #eabfb9, 1px 0px 5px #eabfb9, 0px -1px 5px #eabfb9, 0px 1px 5px #eabfb9;
+    transition: 0.5s;
+}
+.footer {
+    position: fixed;
+    left: 1%;
+    bottom: 1%;
+}
+.icon_whatsapp, .icon_facebook, .icon_phone, .icon_email {
+    font-size: 30px;
+    color: #B86B77;
+    cursor: pointer;
+    z-index: 1;
+    margin: 5px;
+    transition: 0.5s;
+}
+.icon_whatsapp:Hover, .icon_facebook:Hover, .icon_phone:Hover, .icon_email:Hover {
+    text-shadow: -1px 0px 1px #EABFB9, 1px 0px 1px #EABFB9,
+        0px -1px 1px #EABFB9, 0px 1px 1px #EABFB9;
+     transition: 0.5s;
+}
+.btn {
+    width: 80%;
+}
+.indeximg {
+    width: 435px;
+    height: 519px;
+    background-image: url(img/indeximg.jpg);
+    background-size: 100% 100%;
+    margin: 40px;
+    box-shadow: 50px 30px 0px 5px #fbd2c0,
+         -27px -17px 0px 5px #fff,
+          -28px -23px 0px 22px #e7b8a4;
+    animation: playshadow 8s infinite;
+}
+@keyframes playshadow {
+    0% {box-shadow:50px 30px 0px 5px #fbd2c0, -27px -17px 0px 5px #fff, -28px -23px 0px 22px #e7b8a4;}
+    50% {box-shadow: -46px -40px 0px 5px #fbd2c0, 15px 5px 0px 5px #fff, 17px 7px 0px 22px #e7b8a4;}
+    100% {box-shadow:50px 30px 0px 5px #fbd2c0, -27px -17px 0px 5px #fff, -28px -23px 0px 22px #e7b8a4;}
+}
+.logotitle {
+    font-family: 'Rubik Glitch', cursive;
+    font-size: 80px;
+    color: #B86B77;
+    text-shadow: -1px 0px 1px #EABFB9, 1px 0px 1px #EABFB9,
+        0px -1px 1px #EABFB9, 0px 1px 1px #EABFB9;
+}
+.recommendations {
+    width: 100%;
+    height: auto;
+    background-color: #EEE;
+    margin: 1% 0% 1% 0%;
+    padding: 10px;
+}
+.feather {
+    font-size: 50px;
+    color: #B86B77;
+}
+.feedbackimg1 {
+    width: 100%;
+    height: 250px;
+    background-color: #FFF;
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 3px #000;
+}
+.feedbackimg2 {
+    width: 100%;
+    height: 250px;
+    background-color: #FFF;
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 3px #000;
+}
+.feedbackimg3 {
+    width: 100%;
+    height: 250px;
+    background-color: #FFF;
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 3px #000;
+}
+.feedbackimg4 {
+    width: 100%;
+    height: 250px;
+    background-color: #FFF;
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 3px #000;
+}
+.under {
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+    background-color: #EEE;
+    padding: 2%;
+    color: #B86B77;
+}
+#select {
+    width: 90%;
+    height: 450px;
+    cursor: pointer;
+}
+#selectbtn {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .indexvidbg {
+        height: auto;
+    }
+    .box {
+        margin: 2px;
+        height: 500px;
+    }
+    #learning {
+        margin-top: 5%;
+    }
+    .indexvidsub {
+        display: none;
+    }
+    .indeximg {
+        margin-top: 15%;
+    }
+    .recommendations {
+        margin: 3% 0% 3% 0%;
+    }
+    .feedbackimg1, .feedbackimg2, .feedbackimg3, .feedbackimg4 {
+        height: 500px;
+    }
+    .under {
+        padding-bottom: 15%;
+    }
+}

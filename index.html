@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>ChenRis - איפור ערב, איפור כלות</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5d1ad0257a.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bars" onclick="showWind()">
+        <i class="fa fa-bars"></i>
+    </div>
+    <div class="toolbar">
+        <div class="toolbar_content">
+            <div class="closebars" onclick="offWind()">
+                <i class="fa fa-close"></i>
+            </div>
+            <br /><br /><br />
+            <button class="btn">
+                <i class="fa fa-home" style="color: #B86B77;"></i>
+                עמוד ראשי
+            </button>
+            <button class="btn">
+                <i class="fa fa-calendar" style="color: #B86B77;"></i>
+                קביעת תורים
+            </button>
+            <button class="btn">
+                <i class="fa fa-image" style="color: #B86B77;"></i>
+                גלריה
+            </button>
+            <button class="btn">
+                <i class="fa fa-info" style="color: #B86B77;"></i>
+                מדריכי איפור
+            </button>
+            <button class="btn">
+                <i class="fa fa-arrow-up" style="color: #B86B77;"></i>
+                המלצות
+            </button>
+            <button class="btn">
+                <i class="fa fa-book" style="color: #B86B77;"></i>
+                אודות
+            </button>
+            <button class="btn">
+                <i class="fa fa-phone" style="color: #B86B77;"></i>
+                יצירת קשר
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logo">
+                    Chen Ris
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="indexvid">
+        <div class="indexvidsub">
+            <div class="logo" style="text-align: center;">...</div>
+            ביום שהוא כל כך מיוחד אצלך, אסור לך להתפשר!
+            <br />
+            אם חיפשת איפור ערב או איפור כלות ברמה הכי
+            <br />
+            גבוהה שיש ובלי פשרות, הגעת למקום הנכון!
+            <br /><br />
+            <button class="letsgo" onclick="letsgo()">
+                לקביעת תור
+                <i class="fa fa-calendar"></i>
+            </button>
+        </div>
+       <div class="indexvidbg">
+         <video autoplay muted loop class="vd" width="100%">
+               <source src="img/indexvid.mp4" type="video/mp4">
+          </video>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div id="box1" class="box"></div>
+            </div>
+            <div class="col-md-3">
+                <div id="box2" class="box"></div>
+            </div>
+            <div class="col-md-3">
+                <div id="box3" class="box"></div>
+            </div>
+            <div class="col-md-3">
+                <div id="box4" class="box"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div id="box5" class="box"></div>
+            </div>
+            <div class="col-md-3">
+                <div id="box6" class="box"></div>
+            </div>
+            <div class="col-md-3">
+                <div id="box7" class="box"></div>
+            </div>
+            <div class="col-md-3">
+                <div id="box8" class="box"></div>
+            </div>
+        </div>
+        <div id="learning" class="row">
+            <div class="col-md-7">
+                <div class="logotitle" style="text-align: center;">
+                    מדריכי איפור
+                </div>
+                <img id="select" src="img/banner1.jpg">
+            </div>
+            <div class="col-md-5">
+                <div class="indeximg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="recommendations">
+        <div class="container">
+            <div class="logo" style="text-align: center;">
+                Feedbacks
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="feather">
+                        <i class="fa fa-quote-right" style="color: #d8d8d8;"></i>
+                        <br />
+                        אגם, 18
+                    </div>
+                    "שירות ומקצועיות ברמה הכי גבוהה שיש! ענתה לכל דרישה והתוצאה מושלמת!"
+                    <br /><br />
+                    <div class="feedbackimg1"></div>
+                    <br />
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                </div>
+                <div class="col-md-3">
+                    <div class="feather">
+                        <i class="fa fa-quote-right" style="color: #d8d8d8;"></i>
+                        <br />
+                        ליאת, 36
+                    </div>
+                    "יודעת להתאים בידיוק את הגוון המושלם לעור הפנים שלי. אלופה!"
+                    <br /><br />
+                    <div class="feedbackimg2"></div>
+                    <br />
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                </div>
+                <div class="col-md-3">
+                    <div class="feather">
+                        <i class="fa fa-quote-right" style="color: #d8d8d8;"></i>
+                        <br />
+                        נועה, 22
+                    </div>
+                    "הצילה אותי בדקה ה90 עם איפור ערב הורס תודה על האכפתיות!"
+                    <br /><br />
+                    <div class="feedbackimg3"></div>
+                    <br />
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                </div>
+                <div class="col-md-3">
+                    <div class="feather">
+                        <i class="fa fa-quote-right" style="color: #d8d8d8;"></i>
+                        <br />
+                        ליאורה, 24
+                    </div>
+                    "עשתה אותי הכי יפה שיש ביום הכי חשוב לי בחיים! אין על הידיים של חן!"
+                    <br /><br />
+                    <div class="feedbackimg4"></div>
+                    <br />
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                    <i style="color:#B86B77;" class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div id="luxury" class="indeximg"></div>
+            </div>
+            <div class="col-md-7">
+                <div class="logotitle" style="text-align: center;">
+                    קצת עלי
+                </div>
+                בקרוב!
+            </div>
+        </div>
+    </div>
+    <div class="under">
+        <b>&copy;</b> 2022-2023
+        <br />
+        <a href="https://github.com/ofeksabag" style="color:#B86B77;" target="_blank"><i style="cursor: pointer;" class="fa fa-github"></i></a>
+        Chen Ris Makeup <b>&</b> Ofek Sabag Websites
+    </div>
+    <div class="footer">
+        <span class="icon_phone">
+            <i class="fa fa-phone"></i>
+        </span>
+        <span class="icon_facebook">
+            <i class="fa fa-facebook"></i>
+        </span>
+        <span class="icon_whatsapp">
+            <i class="fa fa-whatsapp"></i>
+        </span>
+        <span class="icon_email">
+            <i class="fa fa-at"></i>
+        </span>
+    </div>
+    <script src="index.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
