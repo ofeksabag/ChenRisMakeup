@@ -45,6 +45,13 @@ html, body {
         0px -1px 1px #EABFB9, 0px 1px 1px #EABFB9;
     text-align: left;
 }
+.undlogo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    letter-spacing: 12px;
+    text-align: left;
+    margin-top: -35px;
+}
 .indexvidbg {
     width: 100%;
     height: 600px;
