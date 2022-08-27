@@ -18,7 +18,7 @@ header > .logo > * {
     justify-content: left;
     margin-left: 15%;
 }
-header > .logo > span:nth-of-type(1), container:nth-of-type(1) > .indexSub > span {
+header > .logo > span:nth-of-type(1), container:nth-of-type(1) > .indexSub > span, container:nth-of-type(4) > div:nth-of-type(1) > span, container:nth-of-type(4) > .feedback > span {
     font-family: 'Smooch', cursive;
     font-size: 80px;
     color: #B86B77;
@@ -120,7 +120,7 @@ container:nth-of-type(2) {
 #projects {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 20px;
     margin-top: -3%;
 }
 #projects img {
@@ -128,12 +128,14 @@ container:nth-of-type(2) {
     width: 300px;
     height: 300px;
     transition: 0.5s;
+    box-shadow: 0px 0px 0px 5px #FFF, 0px 0px 0px 6px #EEE;
+    border-radius: 5px;
 }
 #projects img:Hover {
-    box-shadow: -1px 0px 5px #eabfb9, 1px 0px 5px #eabfb9, 0px -1px 5px #eabfb9, 0px 1px 5px #eabfb9;
+    box-shadow: -1px 0px 5px #eabfb9, 1px 0px 5px 3px #eabfb9, 0px -1px 5px #eabfb9, 0px 1px 5px #eabfb9;
     transition: 0.5s;
 }
-container:nth-of-type(3) {
+container:nth-of-type(3), container:nth-of-type(5) {
     margin-top: 3%;
     width: 100%;
     height: auto;
@@ -142,7 +144,7 @@ container:nth-of-type(3) {
     align-items: center;
     flex-wrap: wrap;
 }
-container:nth-of-type(3) > div:nth-of-type(1) > span {
+container:nth-of-type(3) > div:nth-of-type(1) > span, container:nth-of-type(5) > div:nth-of-type(2) > span {
     display: block;
     font-family: 'Rubik Glitch', cursive;
     font-size: 80px;
@@ -166,9 +168,51 @@ container:nth-of-type(3) div:nth-of-type(2) {
     animation: playShadow 8s infinite;
 }
 #banner {
-    width: 90%;
+    width: 700px;
     height: 450px;
     cursor: pointer;
+}
+container:nth-of-type(4) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    height: auto;
+    background-color: #EEE;
+    padding-bottom: 3%;
+}
+container:nth-of-type(4) > div:nth-child(1) {
+    grid-column: span 4;
+}
+container:nth-of-type(4) > .feedback > div:nth-of-type(1) > i:nth-child(1) {
+    font-size: 50px;
+    color: #B86B77;
+}
+.stars > i {
+    font-size: 20px;
+}
+container:nth-of-type(4) > .feedback > div {
+    grid-column: span 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+container:nth-of-type(4) img {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 0px 3px 0px #000;
+    margin: 10px;
+}
+container:nth-of-type(5) > div:nth-of-type(1) {
+    width: 435px;
+    height: 519px;
+    background-image: url(assets/images/luxury.jpg);
+    background-size: 100% 100%;
+    margin: 40px;
+    box-shadow: 50px 30px 0px 5px #fbd2c0,
+         -27px -17px 0px 5px #fff,
+          -28px -23px 0px 22px #e7b8a4;
+    animation: playShadow 8s infinite;
 }
 
 /* Responsive */
@@ -185,6 +229,18 @@ container:nth-of-type(3) div:nth-of-type(2) {
     }
     #banner {
         margin-bottom: 3%;
+        width: 90%;
+    }
+    container:nth-of-type(4) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5%;
+        padding-bottom: 18%;
+    }
+    container:nth-of-type(4) > .feedback > div {
+        grid-column: span 2;
+    }
+    container:nth-of-type(4) > div:nth-child(1) {
+        grid-column: span 2;
     }
 }
 @media screen and (max-width: 700px) {
@@ -202,5 +258,21 @@ container:nth-of-type(3) div:nth-of-type(2) {
     }
     #banner {
         margin-bottom: 3%;
+        width: 90%;
+    }
+    container:nth-of-type(4) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2%;
+        padding-bottom: 50%;
+    }
+    container:nth-of-type(4) > .feedback > div {
+        grid-column: span 1;
+    }
+    container:nth-of-type(4) > div:nth-child(1) {
+        grid-column: span 1;
+    }
+    container:nth-of-type(4) img {
+        width: 80%;
+        height: 400px;
     }
 }
