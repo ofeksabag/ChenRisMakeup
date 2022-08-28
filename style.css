@@ -214,6 +214,35 @@ container:nth-of-type(5) > div:nth-of-type(1) {
           -28px -23px 0px 22px #e7b8a4;
     animation: playShadow 8s infinite;
 }
+.und {
+    position: fixed;
+    left: 1%;
+    bottom: 1%;
+}
+.und > span > i {
+    font-size: 30px;
+    color: #B86B77;
+    cursor: pointer;
+    z-index: 1;
+    margin: 5px;
+    transition: 0.5s;
+}
+.und > span > i:Hover {
+    text-shadow: -1px 0px 1px #EABFB9, 1px 0px 1px #EABFB9, 0px -1px 1px #EABFB9, 0px 1px 1px #EABFB9;
+    transition: 0.5s;
+}
+footer > .copyrights {
+    width: 100%;
+    height: auto;
+    background-color: #EEE;
+    padding: 3% 0% 3% 0%;
+    font-size: 16px;
+    color: #B86B77;
+    letter-spacing: 3px;
+}
+footer > .copyrights > p:nth-of-type(2) > a {
+    color: #B86B77;
+}
 
 /* Responsive */
 @media screen and (max-width: 1000px) {
@@ -241,6 +270,9 @@ container:nth-of-type(5) > div:nth-of-type(1) {
     }
     container:nth-of-type(4) > div:nth-child(1) {
         grid-column: span 2;
+    }
+    footer > .copyrights {
+        padding: 3% 0% 6% 0%;
     }
 }
 @media screen and (max-width: 700px) {
@@ -274,5 +306,8 @@ container:nth-of-type(5) > div:nth-of-type(1) {
     container:nth-of-type(4) img {
         width: 80%;
         height: 400px;
+    }
+    footer > .copyrights {
+        padding: 3% 0% 6% 0%;
     }
 }
