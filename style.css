@@ -78,7 +78,7 @@ nav > .toolbar > button:Hover {
 nav > .toolbar > div:nth-of-type(1) {
     margin: 7%;
 }
-section {
+main {
     margin-top: 1%;
     box-sizing: border-box;
 }
